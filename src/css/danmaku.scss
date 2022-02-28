@@ -12,7 +12,9 @@
         user-select: none;
         cursor: default;
         white-space: nowrap;
-        text-shadow: .5px .5px .5px rgba(0, 0, 0, .5);
+        text-shadow: rgb(0, 0, 0) 1px 0 1px, rgb(0, 0, 0) 0 1px 1px, rgb(0, 0, 0) 0px -1px 1px, rgb(0, 0, 0) -1px 0 1px;
+        font-family: SimHei, "Microsoft JhengHei", Arial, Helvetica, sans-serif;
+        font-weight: bold;
         &--demo {
             position: absolute;
             visibility: hidden;
@@ -24,7 +26,7 @@
         transform: translateX(100%);
         &.dplayer-danmaku-move {
             will-change: transform;
-            animation: danmaku 5s linear;
+            animation: danmaku 8s linear;
             animation-play-state: paused;
         }
     }
